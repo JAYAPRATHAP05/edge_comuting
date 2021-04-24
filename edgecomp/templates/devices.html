@@ -1,0 +1,38 @@
+{% extends 'basics.html' %}
+{% block content %}
+{% load static %}
+
+   <style>
+   	.pad1{
+       
+        padding-right: 120px;
+        padding-left: 152px;
+        
+   </style>
+
+  <div class="container Margin">  
+    <div class="row">
+      <div class="col pad1 ">
+        <form class="form-signin">
+          <h1 class="h3 mb-3 font-weight-normal">ADD DEVICE</h1>
+          <label for="inputEmail" class="sr-only">Device name</label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="Device name" required autofocus>
+          <label for="inputEmail" class="sr-only">Device username</label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="Device username" required autofocus>
+          <label for="inputPassword" class="sr-only">Device IP address</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Device IP address" required>
+          <h1></h1>
+          <button class="btn btn-lg btn-dark btn-block" type="submit">ADD</button>
+          
+        </form>
+      </div>
+      <div class="col bg">
+         <h1 class="h3 mb-3 font-weight-normal">EXISTING DEVICES</h1>
+      </div>  
+  </div>
+</div>
+
+
+
+
+{% endblock %}
